@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Pixeled Regular";
+  src: url(./assets/fonts/Pixeled\ Regular.woff);
+}
+
+body {
+  background-image: url(./assets/Athens\ Greece#15.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 100vh;
+  font-family: "Pixeled Regular" !important;
+}
+.MuiTypography-root {
+  font-family: "Pixeled Regular" !important;
+}
+.top-content h1 {
+  color: white;
+  word-break: keep-all;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+body iframe {
+  display: none;
+}
+.mint-container {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.mint-container .MuiButtonBase-root,
+.MuiContainer-root .MuiPaper-root {
+  max-width: max-content;
+  padding: 8px 60px;
+  font-family: "Pixeled Regular" !important;
+}
+.MuiContainer-root .MuiPaper-root {
+  margin: 0 auto;
+}
+body .MuiContainer-root .MuiPaper-root .MuiButtonBase-root {
+  margin-top: 100px;
+  font-family: "Pixeled Regular" !important;
+}
+.mint-header {
+  max-width: 300px;
+  width: 100%;
+  margin: 50px auto;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social a {
+  display: block;
+  margin-right: 10px;
+}
