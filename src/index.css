@@ -14,13 +14,14 @@ body {
 .MuiTypography-root {
   font-family: "Pixeled Regular" !important;
 }
-.top-content h1 {
-  color: white;
-  word-break: keep-all;
+.logoWrapper {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
+  margin-bottom: 60px;
+}
+.top-content img {
+  margin: 0 auto;
 }
 
 body iframe {
@@ -43,7 +44,7 @@ body iframe {
   margin: 0 auto;
 }
 body .MuiContainer-root .MuiPaper-root .MuiButtonBase-root {
-  margin-top: 100px;
+  margin-top: 20px;
   font-family: "Pixeled Regular" !important;
 }
 .mint-header {

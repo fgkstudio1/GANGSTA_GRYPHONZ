@@ -21,6 +21,7 @@ import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
 import discord from "./assets/discord.png"
 import twitter from "./assets/twitter.png"
+import Logo from "./assets/logo.png"
 const ConnectButton = styled(WalletDialogButton)`
   width: 100%;
   height: 60px;
@@ -166,7 +167,11 @@ const Home = (props: HomeProps) => {
     <Container style={{ marginTop: 100 }}>
       <Container  style={{ position: 'relative' }}>
         <div className="top-content">
-          <h1>Gangsta Gryphonz</h1>
+          {/* <h1>Gangsta Gryphonz</h1> */}
+          <div className="logoWrapper">
+
+          <img src={Logo} alt="" style={{maxWidth:700,width:"90%",margin:"0 auto"}} />
+          </div>
           <div className="social">
               <a href="https://google.com" target="_blank" rel="noreferrer" >
                 <img src={discord} alt="" />
