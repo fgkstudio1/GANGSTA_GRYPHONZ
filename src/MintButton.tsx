@@ -37,6 +37,7 @@ export const MintButton = ({
 
   return (
     <CTAButton
+    className="mint-button"
       disabled={
         candyMachine?.state.isSoldOut ||
         isMinting ||

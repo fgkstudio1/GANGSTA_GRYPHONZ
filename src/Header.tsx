@@ -10,11 +10,42 @@ type HeaderProps = {
 };
 
 export const Header = ({ candyMachine }: HeaderProps) => {
+  console.log(candyMachine)
   return (
     <Grid container className="mint-header" direction="row" justifyContent="center" wrap="nowrap">
       <Grid container direction="row" wrap="nowrap">
         {candyMachine && (
           <Grid container direction="column" wrap="nowrap">
+            <Grid container direction="row"  alignItems="center" justifyContent="space-between">
+              <Typography variant="body2"   color="textPrimary">
+             Total Available
+              </Typography>
+              <Typography
+                variant="h6"
+                color="textPrimary"
+                style={{
+                  fontWeight: 'bold',
+                  marginLeft:"10px"
+                }}
+              >
+                {`${candyMachine?.state.itemsAvailable}`}
+              </Typography>
+            </Grid>
+            <Grid container direction="row"  alignItems="center" justifyContent="space-between">
+              <Typography variant="body2"   color="textPrimary">
+             Redeemed
+              </Typography>
+              <Typography
+                variant="h6"
+                color="textPrimary"
+                style={{
+                  fontWeight: 'bold',
+                  marginLeft:"10px"
+                }}
+              >
+                {`${candyMachine?.state.itemsRedeemed}`}
+              </Typography>
+            </Grid>
             <Grid container direction="row"  alignItems="center" justifyContent="space-between">
               <Typography variant="body2"   color="textPrimary">
                 Remaining
@@ -24,6 +55,7 @@ export const Header = ({ candyMachine }: HeaderProps) => {
                 color="textPrimary"
                 style={{
                   fontWeight: 'bold',
+                  marginLeft:"10px"
                 }}
               >
                 {`${candyMachine?.state.itemsRemaining}`}

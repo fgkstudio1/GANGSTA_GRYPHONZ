@@ -43,10 +43,8 @@ body iframe {
 .MuiContainer-root .MuiPaper-root {
   margin: 0 auto;
 }
-body .MuiContainer-root .MuiPaper-root .MuiButtonBase-root {
-  margin-top: 20px;
-  font-family: "Pixeled Regular" !important;
-}
+/* body .MuiContainer-root .MuiPaper-root .MuiButtonBase-root {
+} */
 .mint-header {
   max-width: 300px;
   width: 100%;
@@ -55,9 +53,34 @@ body .MuiContainer-root .MuiPaper-root .MuiButtonBase-root {
 .social {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .social a {
   display: block;
   margin-right: 10px;
+}
+.social a img {
+  width: 80px;
+}
+body .connect-button,
+body .mint-button {
+  background: rgb(249, 171, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 171, 20, 1) 0%,
+    rgba(249, 74, 20, 1) 100%
+  );
+  margin-top: 20px;
+  font-family: "Pixeled Regular" !important;
+}
+
+body .connect-button.MuiButton-containedPrimary:hover,
+body .mint-button.MuiButton-containedPrimary:hover {
+  background: rgb(249, 171, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 171, 20, 1) 0%,
+    rgba(249, 74, 20, 1) 100%
+  );
 }

@@ -187,7 +187,7 @@ const Home = (props: HomeProps) => {
           className=""
         >
           {!wallet.connected ? (
-            <ConnectButton>Connect Wallet</ConnectButton>
+            <ConnectButton className="connect-button">Connect Wallet</ConnectButton>
           ) : (
             <>
               <Header candyMachine={candyMachine} />
@@ -215,6 +215,7 @@ const Home = (props: HomeProps) => {
                       candyMachine={candyMachine}
                       isMinting={isUserMinting}
                       onMint={onMint}
+                     
                     />
                   </GatewayProvider>
                 ) : (
