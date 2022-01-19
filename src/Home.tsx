@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useMemo, useState, useCallback } from 'react';
 import * as anchor from '@project-serum/anchor';
 
@@ -173,10 +174,10 @@ const Home = (props: HomeProps) => {
           <img src={Logo} alt="" style={{maxWidth:700,width:"90%",margin:"0 auto"}} />
           </div>
           <div className="social">
-              <a href="https://google.com" target="_blank" rel="noreferrer" >
+              <a href="#"  >
                 <img src={discord} alt="" />
               </a>
-              <a href="https://google.com" target="_blank" rel="noreferrer" >
+              <a href="https://mobile.twitter.com/GangstaGryphonz" target="_blank" rel="noreferrer" >
                 <img src={twitter} alt="" />
               </a>
           </div>
