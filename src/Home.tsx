@@ -174,7 +174,7 @@ const Home = (props: HomeProps) => {
           <img src={Logo} alt="" style={{maxWidth:700,width:"90%",margin:"0 auto"}} />
           </div>
           <div className="social">
-              <a href="#"  >
+              <a href="https://discord.gg/RAEET7HnXn"  target="_blank" rel="noreferrer"   >
                 <img src={discord} alt="" />
               </a>
               <a href="https://mobile.twitter.com/GangstaGryphonz" target="_blank" rel="noreferrer" >
